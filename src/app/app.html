@@ -90,7 +90,7 @@
            cloud back ends and CI/CD delivery. I turn complex product requirements into clean, maintainable, production systems.</p>
         <div class="hero-cta reveal in">
           <a class="btn" href="#projects">View Featured Work <svg class="i"><use href="#ic-arrow-right"/></svg></a>
-          <a class="btn ghost" href="cv.html">Download CV <svg class="i"><use href="#ic-download"/></svg></a>
+          <a class="btn ghost" href="Anees-Ahmad-CV.pdf" download>Download CV <svg class="i"><use href="#ic-download"/></svg></a>
         </div>
         <div class="stats reveal in">
           <div class="stat"><div class="n">15+</div><div class="l">Apps Published</div></div>
@@ -226,8 +226,47 @@
     </div>
     <div class="grid g3 stagger">
 
-      <a class="proj reveal" style="--i:0;--mk:linear-gradient(135deg,#2563eb,#22d3ee)" href="https://hrms.mobilesentrix.com/" target="_blank" rel="noopener">
-        <div class="banner"><div class="mark">🧭</div><span class="status live">Live</span></div>
+      <div class="proj bemis-project reveal" style="--i:0;--mk:linear-gradient(135deg,#047857,#22c55e)">
+        <button class="project-shot" type="button" (click)="openGallery('bemis', 0, $event)" aria-label="Open BEMIS project screenshot gallery">
+          <img src="projects/bemis-portal-home.png" alt="Balochistan EMIS portal homepage preview" loading="lazy">
+          <span class="status live">Live · Pakistan</span>
+        </button>
+        <div class="body">
+          <div class="region">Education MIS · Government Portal</div>
+          <h3>Balochistan EMIS / BEMIS Portal</h3>
+          <div class="cs">
+            <div class="row"><b>Role</b><span>Full-stack engineer — portal, dashboards, GIS &amp; reporting</span></div>
+            <div class="row"><b>Problem</b><span>Education leadership needed one web portal for school data, monitoring, census and decision support.</span></div>
+            <div class="row"><b>Outcome</b><span>Live EMIS platform with analytics dashboards, district reports, school mapping and administrative workflows.</span></div>
+          </div>
+          <div class="mini-tags"><span>Angular</span><span>GIS</span><span>Dashboards</span><span>Reports</span><span>EMIS</span></div>
+          <a class="visit" href="https://bemisportal.com/" target="_blank" rel="noopener">Visit platform <svg class="i"><use href="#ic-external"/></svg> <span class="dom">bemisportal.com</span></a>
+        </div>
+      </div>
+
+      <div class="proj ms-web-project reveal" style="--i:1;--mk:linear-gradient(135deg,#111827,#1683ff)">
+        <button class="project-shot" type="button" (click)="openGallery('mobileSentrixWeb', 0, $event)" aria-label="Open Mobile Sentrix Web screenshot gallery">
+          <img src="projects/ms-web-dashboard.png" alt="Mobile Sentrix Web dashboard preview" loading="lazy">
+          <span class="status live">Angular · Web</span>
+        </button>
+        <div class="body">
+          <div class="region">Enterprise Admin · Angular</div>
+          <h3>Mobile Sentrix Web</h3>
+          <div class="cs">
+            <div class="row"><b>Role</b><span>Angular engineer — admin modules, dashboards &amp; workflow UI</span></div>
+            <div class="row"><b>Problem</b><span>Operations teams needed one web console for HRMS, chat, blog, drive and device-control workflows.</span></div>
+            <div class="row"><b>Outcome</b><span>Angular admin platform with searchable modules, HR tables, scheduler, document drive and real-time collaboration UI.</span></div>
+          </div>
+          <div class="mini-tags"><span>Angular</span><span>TypeScript</span><span>HRMS</span><span>Chat</span><span>Drive</span></div>
+          <a class="visit" href="https://admin.dev.mobilesentrix.com/dashboard" target="_blank" rel="noopener">Visit platform <svg class="i"><use href="#ic-external"/></svg> <span class="dom">admin.dev.mobilesentrix.com</span></a>
+        </div>
+      </div>
+
+      <div class="proj mobile-sentrix-project reveal" style="--i:0;--mk:linear-gradient(135deg,#2563eb,#22d3ee)">
+        <button class="project-shot" type="button" (click)="openGallery('mobileSentrix', 0, $event)" aria-label="Open Mobile Sentrix mobile app screenshot gallery">
+          <img src="projects/mobile-sentrix-clock.png" alt="Mobile Sentrix mobile app dashboard preview" loading="lazy">
+          <span class="status live">Mobile App</span>
+        </button>
         <div class="body">
           <div class="region">HRMS · Global</div>
           <h3>Mobile Sentrix</h3>
@@ -237,12 +276,15 @@
             <div class="row"><b>Outcome</b><span>Continuous GPS clock-in, VoIP + Agora video, TOTP 2FA, isolated Dev/Prod Firebase.</span></div>
           </div>
           <div class="mini-tags"><span>Ionic</span><span>Angular</span><span>Agora</span><span>CallKit</span><span>Firebase</span></div>
-          <div class="visit">Visit platform <svg class="i"><use href="#ic-external"/></svg> <span class="dom">hrms.mobilesentrix.com</span></div>
+          <a class="visit" href="https://apps.apple.com/us/app/hrms-mobile/id6449835914" target="_blank" rel="noopener">View on App Store <svg class="i"><use href="#ic-external"/></svg> <span class="dom">apps.apple.com</span></a>
         </div>
-      </a>
+      </div>
 
-      <a class="proj reveal" style="--i:1;--mk:linear-gradient(135deg,#dd7a1f,#f4c56b)" href="https://appv2.projul.com/#/welcome" target="_blank" rel="noopener">
-        <div class="banner"><div class="mark">🏗️</div><span class="status live">Live · USA</span></div>
+      <div class="proj projul-project reveal" style="--i:1;--mk:linear-gradient(135deg,#dd7a1f,#f4c56b)">
+        <button class="project-shot" type="button" (click)="openGallery('projul', 0, $event)" aria-label="Open Projul app screenshot gallery">
+          <img src="projects/projul-home.png" alt="Projul mobile app home screen preview" loading="lazy">
+          <span class="status live">Live · USA</span>
+        </button>
         <div class="body">
           <div class="region">Construction · USA</div>
           <h3>Projul</h3>
@@ -252,12 +294,15 @@
             <div class="row"><b>Outcome</b><span>Custom camera plugin with annotation, offline-first SQLite, background GPS crew tracking.</span></div>
           </div>
           <div class="mini-tags"><span>Ionic</span><span>Capacitor</span><span>SQLite</span><span>Offline-First</span></div>
-          <div class="visit">Visit platform <svg class="i"><use href="#ic-external"/></svg> <span class="dom">appv2.projul.com</span></div>
+          <a class="visit" href="https://apps.apple.com/us/app/projul-mobile/id6444810085" target="_blank" rel="noopener">View on App Store <svg class="i"><use href="#ic-external"/></svg> <span class="dom">apps.apple.com</span></a>
         </div>
-      </a>
+      </div>
 
-      <a class="proj reveal" style="--i:2;--mk:linear-gradient(135deg,#14b8c4,#5eead4)" href="https://www.soolah.com/" target="_blank" rel="noopener">
-        <div class="banner"><div class="mark">🧼</div><span class="status live">Live · Canada</span></div>
+      <div class="proj soolah-project reveal" style="--i:2;--mk:linear-gradient(135deg,#0b4f86,#24a8ff)">
+        <button class="project-shot" type="button" (click)="openGallery('soolah', 0, $event)" aria-label="Open Soolah app screenshot gallery">
+          <img src="projects/soolah-home.png" alt="Soolah mobile app home screen preview" loading="lazy">
+          <span class="status live">Mobile App</span>
+        </button>
         <div class="body">
           <div class="region">Services · Canada</div>
           <h3>Soolah</h3>
@@ -267,12 +312,15 @@
             <div class="row"><b>Outcome</b><span>Payment gateway, real-time scheduling, live status tracking, ratings &amp; reviews.</span></div>
           </div>
           <div class="mini-tags"><span>Ionic</span><span>Payments</span><span>Firebase</span><span>Real-Time</span></div>
-          <div class="visit">Visit website <svg class="i"><use href="#ic-external"/></svg> <span class="dom">soolah.com</span></div>
+          <a class="visit" href="https://www.soolah.com/" target="_blank" rel="noopener">Visit website <svg class="i"><use href="#ic-external"/></svg> <span class="dom">soolah.com</span></a>
         </div>
-      </a>
+      </div>
 
-      <a class="proj reveal" style="--i:0;--mk:linear-gradient(135deg,#7c3aed,#c4b5fd)" href="https://pinghub.asia/" target="_blank" rel="noopener">
-        <div class="banner"><div class="mark">📦</div><span class="status live">Live</span></div>
+      <div class="proj pinghub-project reveal" style="--i:0;--mk:linear-gradient(135deg,#c91562,#f472b6)">
+        <button class="project-shot" type="button" (click)="openGallery('pinghub', 0, $event)" aria-label="Open PingHub app screenshot gallery">
+          <img src="projects/pinghub-home.png" alt="PingHub mobile app home screen preview" loading="lazy">
+          <span class="status live">Mobile App</span>
+        </button>
         <div class="body">
           <div class="region">E-commerce · Logistics</div>
           <h3>PingHub</h3>
@@ -282,9 +330,9 @@
             <div class="row"><b>Outcome</b><span>QR order processing and live multi-transport delivery tracking over WebSocket.</span></div>
           </div>
           <div class="mini-tags"><span>Ionic</span><span>WebSocket</span><span>QR</span><span>REST</span></div>
-          <div class="visit">Visit website <svg class="i"><use href="#ic-external"/></svg> <span class="dom">pinghub.asia</span></div>
+          <a class="visit" href="https://apps.apple.com/us/app/pinghub/id6775665811" target="_blank" rel="noopener">View on App Store <svg class="i"><use href="#ic-external"/></svg> <span class="dom">apps.apple.com</span></a>
         </div>
-      </a>
+      </div>
 
       <a class="proj reveal" style="--i:1;--mk:linear-gradient(135deg,#0ea5a4,#5eead4)" href="https://vaccine.pk/" target="_blank" rel="noopener">
         <div class="banner"><div class="mark">💉</div><span class="status live">Live · Pakistan</span></div>
@@ -334,129 +382,115 @@
   </div>
 </section>
 
+@if (galleryOpen()) {
+  <div class="gallery-modal" role="dialog" aria-modal="true" aria-label="Project screenshot gallery" (click)="closeGallery($event)">
+    <div class="gallery-panel" (click)="$event.stopPropagation()">
+      <div class="gallery-top">
+        <div>
+          <div class="eyebrow">{{ activeGalleryProject.eyebrow }}</div>
+          <h3>{{ activeGalleryImage.title }}</h3>
+          <p>{{ activeGalleryImage.caption }}</p>
+        </div>
+        <button class="icon-btn gallery-close" type="button" (click)="closeGallery($event)" aria-label="Close gallery">
+          <svg class="i"><use href="#ic-x"/></svg>
+        </button>
+      </div>
+
+      <div class="gallery-stage">
+        <button class="gallery-nav prev" type="button" (click)="showPreviousGalleryImage($event)" aria-label="Previous screenshot">
+          <svg class="i"><use href="#ic-arrow-right"/></svg>
+        </button>
+        <img [src]="activeGalleryImage.src" [alt]="activeGalleryImage.title">
+        <button class="gallery-nav next" type="button" (click)="showNextGalleryImage($event)" aria-label="Next screenshot">
+          <svg class="i"><use href="#ic-arrow-right"/></svg>
+        </button>
+      </div>
+
+      <div class="gallery-bottom">
+        <div class="gallery-count">{{ activeGalleryIndex() + 1 }} / {{ activeGalleryImages.length }}</div>
+        <div class="gallery-thumbs" aria-label="Project screenshots">
+          @for (image of activeGalleryImages; track image.src; let index = $index) {
+            <button
+              class="gallery-thumb"
+              type="button"
+              [class.active]="index === activeGalleryIndex()"
+              (click)="selectGalleryImage(index, $event)"
+              [attr.aria-label]="'Show ' + image.title"
+            >
+              <img [src]="image.src" [alt]="image.title" loading="lazy">
+            </button>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+}
+
 <!-- MOBILE APP SHOWCASE -->
 <section id="screens" style="border-top:1px solid var(--border)">
   <div class="wrap">
     <div class="section-head reveal">
       <div class="eyebrow">Mobile App Showcase</div>
       <h2>On-device experiences</h2>
-      <p class="lead">Pixel-crafted UI mockups in real device frames, styled after each product's branding — dashboard,
-         calling, chat, tracking, home &amp; login flows.</p>
+      <p class="lead">Real mobile screens from shipped products — HRMS workflows, construction dashboards, cleaning
+         bookings, chat, scheduler, documents and task flows.</p>
     </div>
 
-    <div class="stage">
+    <div class="stage real-device-stage">
+      <button class="device real-device reveal" style="--i:0" type="button" (click)="openGallery('mobileSentrix', 0, $event)" aria-label="Open Mobile Sentrix clock-in screenshot">
+        <img src="projects/mobile-sentrix-clock.png" alt="Mobile Sentrix clock-in dashboard" loading="lazy">
+        <span class="cap2"><b>Mobile Sentrix</b>Clock-in dashboard<span class="tagpill">HRMS</span></span>
+      </button>
 
-      <div class="device reveal" style="--i:0">
-        <div class="iphone"><div class="scr"><div class="isl"></div>
-          <div class="app" style="--brand:#2563eb">
-            <div class="sbar"><span>9:41</span><span class="dots">📶 🔋</span></div>
-            <div class="abar"><div class="t">Good morning, Anees<small>Field Ops · Shift active</small></div><div class="rt">🔔</div></div>
-            <div class="pad">
-              <div class="tiles">
-                <div class="tile"><div class="n">08:12</div><div class="l">Clocked In</div></div>
-                <div class="tile"><div class="n">6</div><div class="l">Tasks Today</div></div>
-                <div class="tile"><div class="n">98%</div><div class="l">Attendance</div></div>
-                <div class="tile"><div class="n">4</div><div class="l">Team Online</div></div>
-              </div>
-              <div class="cardm"><div class="hd">Hours This Week<span class="mo">Report ›</span></div>
-                <div class="chartm"><i style="height:60%"></i><i style="height:82%"></i><i style="height:45%"></i><i style="height:92%"></i><i style="height:70%"></i><i style="height:34%"></i><i style="height:58%"></i></div>
-              </div>
-            </div>
-            <div class="bnav"><span class="on">🏠</span><span>🗓️</span><span>💬</span><span>👤</span></div>
-          </div>
-        </div></div>
-        <div class="cap2"><b>Mobile Sentrix — HRMS</b>Dashboard · GPS clock-in &amp; attendance<span class="tagpill">iPhone</span></div>
-      </div>
+      <button class="device real-device reveal" style="--i:1" type="button" (click)="openGallery('mobileSentrix', 3, $event)" aria-label="Open Mobile Sentrix scheduler screenshot">
+        <img src="projects/mobile-sentrix-scheduler.png" alt="Mobile Sentrix scheduler screen" loading="lazy">
+        <span class="cap2"><b>Mobile Sentrix</b>Scheduler<span class="tagpill">Schedule</span></span>
+      </button>
 
-      <div class="device reveal" style="--i:1">
-        <div class="android"><div class="scr"><div class="punch"></div>
-          <div class="app" style="--brand:#2563eb">
-            <div class="call">
-              <div class="sbar inv" style="position:absolute;top:0;left:0;right:0;z-index:5"><span>9:41</span><span>📶 🔋</span></div>
-              <div class="self"></div>
-              <div class="cav">👩</div>
-              <div class="cn">Sarah Malik</div>
-              <div class="cs2">AGORA HD · 04:12</div>
-              <div class="ctrls"><div class="cbtn">🎤</div><div class="cbtn">📹</div><div class="cbtn">🔊</div><div class="cbtn end">📞</div></div>
-            </div>
-          </div>
-        </div></div>
-        <div class="cap2"><b>Mobile Sentrix — Calling</b>Audio/Video · Agora SDK + WebRTC<span class="tagpill">Android</span></div>
-      </div>
+      <button class="device real-device reveal" style="--i:2" type="button" (click)="openGallery('mobileSentrix', 4, $event)" aria-label="Open Mobile Sentrix chat screenshot">
+        <img src="projects/mobile-sentrix-chat.png" alt="Mobile Sentrix chat list" loading="lazy">
+        <span class="cap2"><b>Mobile Sentrix</b>Team chat<span class="tagpill">Chat</span></span>
+      </button>
 
-      <div class="device reveal" style="--i:2">
-        <div class="iphone"><div class="scr"><div class="isl"></div>
-          <div class="app" style="--brand:#2563eb">
-            <div class="sbar"><span>9:41</span><span class="dots">📶 🔋</span></div>
-            <div class="abar"><div class="av" style="background:rgba(255,255,255,.22)">TF</div><div class="t">Team · Field Ops<small>4 online</small></div><div class="rt">📞 📹</div></div>
-            <div class="chat">
-              <div class="bub in">Morning team — site B inspection at 10?</div>
-              <div class="bub out">On my way, clocked in ✅</div>
-              <div class="bub in">Uploading the annotated photos now 📸</div>
-              <div class="bub out">Perfect, I'll start the report</div>
-              <div class="cinput"><span class="ph">Message…</span><span class="snd">➤</span></div>
-            </div>
-          </div>
-        </div></div>
-        <div class="cap2"><b>Mobile Sentrix — Chat</b>Real-time messaging · WebSocket<span class="tagpill">iPhone</span></div>
-      </div>
+      <button class="device real-device reveal" style="--i:0" type="button" (click)="openGallery('mobileSentrix', 7, $event)" aria-label="Open Mobile Sentrix tasks screenshot">
+        <img src="projects/mobile-sentrix-tasks.png" alt="Mobile Sentrix task list" loading="lazy">
+        <span class="cap2"><b>Mobile Sentrix</b>Task management<span class="tagpill">Tasks</span></span>
+      </button>
 
-      <div class="device reveal" style="--i:0">
-        <div class="android"><div class="scr"><div class="punch"></div>
-          <div class="app" style="--brand:#12457a">
-            <div class="sbar"><span>9:41</span><span class="dots">📶 🔋</span></div>
-            <div class="abar"><div class="t">Shipment #CL-4471<small>Rawalpindi → Karachi</small></div><div class="rt">⋯</div></div>
-            <div class="map">
-              <div class="grid"></div><div class="road r1"></div><div class="road r2"></div>
-              <div class="route"></div><div class="pin a"></div><div class="pin b"></div>
-              <div class="trackcard">
-                <div class="hd" style="margin:0 0 5px">Estimated Arrival<span class="pill g">On time</span></div>
-                <div class="eta">2h 40m</div>
-                <div class="rowm"><div class="av">AR</div><div class="tx"><b>Ali Raza · Driver</b><span>Freight · TLX-209</span></div><span class="rt">📞</span></div>
-              </div>
-            </div>
-          </div>
-        </div></div>
-        <div class="cap2"><b>Care Logistics</b>Live shipment tracking · Maps &amp; GPS<span class="tagpill">Android</span></div>
-      </div>
+      <button class="device real-device reveal" style="--i:1" type="button" (click)="openGallery('projul', 0, $event)" aria-label="Open Projul home screenshot">
+        <img src="projects/projul-home.png" alt="Projul mobile home screen" loading="lazy">
+        <span class="cap2"><b>Projul</b>Construction home<span class="tagpill">Projects</span></span>
+      </button>
 
-      <div class="device reveal" style="--i:1">
-        <div class="iphone"><div class="scr"><div class="isl"></div>
-          <div class="app" style="--brand:#0ea5a4">
-            <div class="heroM">
-              <div class="sbar inv" style="padding:2px 2px 7px"><span>9:41</span><span>📶 🔋</span></div>
-              <div class="g">Deliver to · Islamabad</div>
-              <h4>Book Home Vaccination</h4>
-              <div class="searchM">🔍&nbsp;&nbsp;Search vaccines &amp; services</div>
-            </div>
-            <div class="chipsM"><span class="chipM on">All</span><span class="chipM">Infants</span><span class="chipM">Travel</span><span class="chipM">COVID-19</span></div>
-            <div style="flex:1;overflow:hidden">
-              <div class="svc"><div class="im"></div><div class="bd"><b>Infant Immunization</b><span>WHO schedule · at home</span><div class="pr">Free consult</div></div></div>
-              <div class="svc"><div class="im"></div><div class="bd"><b>Flu &amp; Travel Vaccines</b><span>Doorstep · same day</span><div class="pr">Book now</div></div></div>
-            </div>
-            <div class="bnav"><span class="on">🏠</span><span>💉</span><span>🗓️</span><span>👤</span></div>
-          </div>
-        </div></div>
-        <div class="cap2"><b>Vaccine.pk</b>Home vaccination booking &amp; records<span class="tagpill">iPhone</span></div>
-      </div>
+      <button class="device real-device reveal" style="--i:2" type="button" (click)="openGallery('projul', 2, $event)" aria-label="Open Projul lead pipeline screenshot">
+        <img src="projects/projul-leads.png" alt="Projul lead pipeline screen" loading="lazy">
+        <span class="cap2"><b>Projul</b>Lead pipeline<span class="tagpill">Leads</span></span>
+      </button>
 
-      <div class="device reveal" style="--i:2">
-        <div class="iphone"><div class="scr"><div class="isl"></div>
-          <div class="app" style="--brand:#14b8c4">
-            <div class="login">
-              <div class="sbar inv" style="position:absolute;top:0;left:0;right:0"><span>9:41</span><span>📶 🔋</span></div>
-              <div class="lg">🧼</div>
-              <h4>Welcome to Soolah</h4>
-              <div class="sub">One-click cleaning, booked in seconds</div>
-              <div class="field">📧&nbsp;&nbsp;you@email.com</div>
-              <div class="field">🔒&nbsp;&nbsp;••••••••</div>
-              <div class="btnb">Sign In</div>
-              <div class="alt">New here?  Create an account</div>
-            </div>
-          </div>
-        </div></div>
-        <div class="cap2"><b>Soolah — Cleaning</b>Secure login &amp; onboarding<span class="tagpill">iPhone</span></div>
-      </div>
+      <button class="device real-device reveal" style="--i:0" type="button" (click)="openGallery('projul', 3, $event)" aria-label="Open Projul projects screenshot">
+        <img src="projects/projul-projects.png" alt="Projul projects screen" loading="lazy">
+        <span class="cap2"><b>Projul</b>Projects overview<span class="tagpill">Construction</span></span>
+      </button>
+
+      <button class="device real-device reveal" style="--i:1" type="button" (click)="openGallery('pinghub', 0, $event)" aria-label="Open PingHub home screenshot">
+        <img src="projects/pinghub-home.png" alt="PingHub charter truck delivery home screen" loading="lazy">
+        <span class="cap2"><b>PingHub</b>Charter delivery<span class="tagpill">Logistics</span></span>
+      </button>
+
+      <button class="device real-device reveal" style="--i:2" type="button" (click)="openGallery('pinghub', 1, $event)" aria-label="Open PingHub B2B services screenshot">
+        <img src="projects/pinghub-services.png" alt="PingHub B2B services screen" loading="lazy">
+        <span class="cap2"><b>PingHub</b>B2B services<span class="tagpill">Delivery</span></span>
+      </button>
+
+      <button class="device real-device reveal" style="--i:1" type="button" (click)="openGallery('soolah', 0, $event)" aria-label="Open Soolah home screenshot">
+        <img src="projects/soolah-home.png" alt="Soolah cleaning app home screen" loading="lazy">
+        <span class="cap2"><b>Soolah</b>One-click cleaning<span class="tagpill">Home</span></span>
+      </button>
+
+      <button class="device real-device reveal" style="--i:2" type="button" (click)="openGallery('soolah', 2, $event)" aria-label="Open Soolah bookings screenshot">
+        <img src="projects/soolah-bookings.png" alt="Soolah bookings screen" loading="lazy">
+        <span class="cap2"><b>Soolah</b>Bookings<span class="tagpill">Cleaning</span></span>
+      </button>
 
     </div>
   </div>
